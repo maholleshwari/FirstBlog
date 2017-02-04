@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<html>
+<link rel="stylesheet" href="{% static 'css/first.css' %}" >
+<title>Django</title>
+<h1>hello! Welcome to django tutorial :)</h1>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+
+<a href="{% url 'post_new' %}" class="top-menu"><span class= "glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_draft_list%}" class="top-menu"><span class= "glyphicon glyphicon-edit"></span></a>
+
+</html>
